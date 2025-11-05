@@ -130,6 +130,16 @@ button:hover {
   font-size: 14px;
 }
 
+/* Space Fact */
+.space-fact {
+  background: #105bd8;
+  color: white;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
 /* Placeholder content */
 .placeholder {
   flex: 1 1 100%;
@@ -141,4 +151,90 @@ button:hover {
 .placeholder-icon {
   font-size: 48px;
   margin-bottom: 20px;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-content h2 {
+  margin: 15px 0;
+  color: #105bd8;
+}
+
+.modal-content .date {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.modal-content .explanation {
+  line-height: 1.6;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  background: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.close:hover {
+  color: #105bd8;
+}
+
+/* Hover zoom effect */
+.gallery-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* NASA brand colors */
+button {
+  background-color: #105bd8;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b3d91;
 }
